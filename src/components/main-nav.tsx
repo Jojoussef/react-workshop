@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { Icons } from "@/components/icons";
 import { NavItem } from "@/types/nav";
 import { useLocation } from "react-router-dom";
+import { useTheme } from "next-themes";
 
 interface MainNavProps {
   items?: NavItem[];
@@ -10,6 +11,8 @@ interface MainNavProps {
 
 export function MainNav({ items }: MainNavProps) {
   const location = useLocation();
+  const { theme } = useTheme();
+  console.log("theme", theme);
 
   return (
     <div className="flex gap-6 md:gap-10">
@@ -29,7 +32,12 @@ export function MainNav({ items }: MainNavProps) {
                     "flex items-center h-16 text-sm font-medium text-muted-foreground",
                     item.disabled && "cursor-not-allowed opacity-80",
                     location.pathname === item.href &&
-                      "font-bold text-black text-md border-b-2 border-black"
+                      cn(
+                        "font-bold",
+                        theme !== "dark" ? " text-black" : "text-white",
+                        "text-md border-b-2",
+                        theme !== "dark" ? "border-black" : "border-white"
+                      )
                   )}
                 >
                   {item.title}
