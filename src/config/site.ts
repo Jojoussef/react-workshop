@@ -13,8 +13,8 @@ export const siteConfig = {
       href: "/todo",
     },
     {
-      title: "Resume",
-      href: "/resume",
+      title: "Chatbot",
+      href: "/chatbot",
     },
   ],
   links: {
