@@ -21,10 +21,10 @@ import {
   Settings,
   SunMedium,
   Trash,
-  Twitter,
   User,
   X,
   LucideIcon,
+  LinkedinIcon,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -74,7 +74,6 @@ export const Icons = {
   arrowRight: ArrowRight,
   help: HelpCircle,
   pizza: Pizza,
-  twitter: Twitter,
   check: Check,
   copy: Copy,
   copyDone: ClipboardCheck,
@@ -171,4 +170,5 @@ export const Icons = {
       />
     </svg>
   ),
+  linkedin: (props: LucideProps) => <LinkedinIcon {...props} />,
 };
