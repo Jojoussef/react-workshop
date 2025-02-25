@@ -1,4 +1,4 @@
-# React Shadcn-UI Template
+# React Workshop Boilerplate
 
 This repository provides a preconfigured boilerplate for a React application using the [Shadcn-UI](https://github.com/Jojoussef/react-workshop.git) library and [Vite](https://vitejs.dev/) as the build tool and development server. The template is designed to help you kickstart your React projects with Shadcn-UI and Vite, offering a fast development environment and optimized production builds.
 
