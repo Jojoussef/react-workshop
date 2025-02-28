@@ -16,6 +16,10 @@ export const siteConfig = {
       title: "Chatbot",
       href: "/chatbot",
     },
+    {
+      title: "Classe",
+      href: "/classe",
+    },
   ],
   links: {
     linkedin: "linkedin-link",
