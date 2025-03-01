@@ -1,15 +1,6 @@
-import { useEffect, useState } from "react";
-import { getRandomQuote } from "@/api/quotes";
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
-import { Quote } from "@/api/quotes";
 
 export default function HomePage() {
-  const [quote, setQuote] = useState({} as Quote);
-  useEffect(() => {
-    getRandomQuote().then((results) => {
-      setQuote(results);
-    });
-  }, []);
   const skills = [
     {
       title: "Programming Languages",
