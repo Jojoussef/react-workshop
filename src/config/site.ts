@@ -5,25 +5,17 @@ export const siteConfig = {
   description: "A life long learner",
   mainNav: [
     {
-      title: "Home",
+      title: "About",
       href: "/",
     },
     {
-      title: "Todo List",
-      href: "/todo",
-    },
-    {
-      title: "Chatbot",
-      href: "/chatbot",
-    },
-    {
-      title: "Classe",
-      href: "/classe",
+      title: "Projects",
+      href: "/projects",
     },
   ],
   links: {
-    linkedin: "linkedin-link",
-    github: "github-link",
+    linkedin: "https://www.linkedin.com/in/youssef-benatti-86b157145/",
+    github: "https:github.com/Jojoussef/",
     docs: "",
   },
 };

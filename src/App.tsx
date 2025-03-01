@@ -1,17 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
 import HomePage from "@/pages/HomePage";
-import Chatbot from "./pages/Chatbot";
-import TodoList from "./pages/TodoList";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route exact path="/" Component={HomePage} />
-          <Route exact path="/todo" Component={TodoList} />
-          <Route path="/chatbot" Component={Chatbot} />
+          <Route path="/" Component={HomePage} />
+          <Route path="/projects" Component={Projects} />
         </Routes>
       </Layout>
     </BrowserRouter>
