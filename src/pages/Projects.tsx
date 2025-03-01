@@ -103,7 +103,9 @@ export default function Projects() {
   return (
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
       <h1 className="text-4xl font-bold text-[#d000ff]">Projects</h1>
-      <p className="text-lg ">Here are some of the projects I've worked on.</p>
+      <p className="text-lg ">
+        Here are some of the projects I&apos;ve worked on.
+      </p>
       <div className="grid gap-4">
         {/* Projects Section */}
         <section className="mb-6">
@@ -143,7 +145,6 @@ export default function Projects() {
                             project.type === "mobile"
                               ? "object-contain"
                               : "object-cover",
-                            ,
                           ])}
                         />
                       ))}
