@@ -18,11 +18,17 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "GMAO",
+      title: "TuniCommerce",
       year: "",
-      description: "A web application for maintenance management in a factory.",
-      technology: "React, Django, MySql, MongoDB",
-      images: ["/path/to/gmao-image1.jpg", "/path/to/gmao-image2.jpg"],
+      description: "An E-Commerce website builder.",
+      technology: "NextJS, PostgreSQL, Drizzle, Cleark, Sentry",
+      images: [
+        "src/assets/tunicommerce/1.png",
+        "src/assets/tunicommerce/2.png",
+        "src/assets/tunicommerce/3.png",
+        "src/assets/tunicommerce/4.png",
+        "src/assets/tunicommerce/5.png",
+      ],
       type: "web",
     },
     {
@@ -45,20 +51,7 @@ export default function Projects() {
       ],
       type: "mobile",
     },
-    {
-      title: "TuniCommerce",
-      year: "",
-      description: "An E-Commerce website builder.",
-      technology: "NextJS, PostgreSQL, Drizzle, Cleark, Sentry",
-      images: [
-        "src/assets/tunicommerce/1.png",
-        "src/assets/tunicommerce/2.png",
-        "src/assets/tunicommerce/3.png",
-        "src/assets/tunicommerce/4.png",
-        "src/assets/tunicommerce/5.png",
-      ],
-      type: "web",
-    },
+
     {
       title: "AfricaOne Social App Admin Panel",
       year: "",
@@ -70,6 +63,14 @@ export default function Projects() {
         "src/assets/admin-dashboard/3.png",
         "src/assets/admin-dashboard/4.png",
       ],
+      type: "web",
+    },
+    {
+      title: "GMAO",
+      year: "",
+      description: "A web application for maintenance management in a factory.",
+      technology: "React, Django, MySql, MongoDB",
+      images: ["src/assets/gmao/1.png"],
       type: "web",
     },
   ];
@@ -126,19 +127,19 @@ export default function Projects() {
                   <div
                     className={
                       project.type === "mobile"
-                        ? "grid grid-cols-6 gap-0.5 rounded-sm"
+                        ? "grid grid-cols-5 gap-0.5 rounded-sm"
                         : "rounded-sm"
                     }
                   >
                     {project.images
-                      .slice(0, project.type === "mobile" ? 6 : 1)
+                      .slice(0, project.type === "mobile" ? 5 : 1)
                       .map((image, imgIndex) => (
                         <img
                           key={imgIndex}
                           src={image}
                           alt={project.title}
                           className={cn([
-                            "mb-4 w-full h-62 ",
+                            "mb-4 w-full h-72 ",
                             project.type === "mobile"
                               ? "object-contain"
                               : "object-cover",
