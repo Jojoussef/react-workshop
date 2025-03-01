@@ -94,7 +94,7 @@ export default function HomePage() {
       <Avatar>
         <AvatarImage
           className="rounded-full h-40 w-40 md:h-64 md:w-64"
-          src="src/assets/avatar.png"
+          src="../assets/avatar.png"
         />
         <AvatarFallback className="rounded-full">YB</AvatarFallback>
       </Avatar>
